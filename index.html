@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrentBlog: Hey, we’re CurrentBlog See our thoughts, stories and ideas.</title>
+    <!--
+              - favicon
+            -->
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon">
+    <!--
+              - css links
+            -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel=" stylesheet" href="assets/css/plugins/slick.css">
+    <!--
+              - Font Awesome CSS link
+            -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <div class="dim-screen"></div>
+        <!--
+                    headers
+                    -->
+        <!-- header section starts  -->
+        <header class="header-default">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-xl">
+                    <!-- logo  -->
+                    <a href="home.html" class="navbar-brand">
+                        <h1>CurrentBlog</h1>
+                    </a>
+
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown active">
+                                <a href="home.html" class="nav-link dropdown-toggle">Home</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" class="dropdown-item">Fashion</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Movies</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Electronic</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Cricket</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Technology</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="blog-list.html" class="nav-link">Latest</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="blog-list.html" class="nav-link">Trending</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="video.html" class="nav-link">Viral videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- right side of header  -->
+                    <div class="header-right">
+                        <!-- buttons  -->
+                        <div class="header-buttons">
+                            <input type="search" class="header-search-input" placeholder="search.....">
+                            <button class="icon-button" data-search-toggler>
+                                <i class="fas fa-th-large menu"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--  header section ends  -->
+
+        <!-- medium header section starts -->
+        <div class="medium-header" data-second-navbar>
+            <header class="header-default2">
+                <nav class="navbar2 navbar-expand-lg">
+                    <div class="container-xl">
+                        <div class="navbar-collapse navclose">
+                            <ul class="navbar-nav2 mr-auto">
+                                <li class="nav-item dropdown active">
+                                    <a href="home.html" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="blog-list.html" class="nav-link">Latest</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="blog-list.html" class="nav-link">Trending</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="video.html" class="nav-link">Viral videos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="fas fa-times closebutton" data-closebutton data-search-toggler></div>
+                        </div>
+
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class="dim-screen" data-overlay data-search-toggler></div>
+        <!-- medium header section ends -->
+
+        <!-- mobile header section starts -->
+        <section class="mobile-nav">
+            <div class="navs contaner">
+                <div class="navbar-brand2">
+                    <h1>CurrentBlog</h1>
+                </div>
+                <div class="search-box">
+                    <input type="search" name="" id="search-input" placeholder="search....">
+                    <i class="bx bx-search"></i>
+                </div>
+                <label for="nav-check" class="nav-ink">
+                    <i class="fas fa-th-large" id="menuIcon"></i>
+                </label>
+            </div>
+            <div class="collapse navbar-collapse" id="mobile-navbar">
+                <ul class="navbar-nav mr-auto navbar-contents">
+                    <div class="navbar-brand2">
+                        <h1>CurrentBlog</h1>
+                    </div>
+                    <li class="nav-item dropdown active">
+                        <a href="home.html" class="nav-link dropdown-toggle">Home</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="dropdown-item">Fashion</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Movies</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Electronic</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Cricket</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Technology</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog-list.html" class="nav-link">Latest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog-list.html" class="nav-link">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="video.html" class="nav-link">Viral Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <div class="social-network">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </ul>
+                <div class="fas fa-times" id="closeIcon"></div>
+            </div>
+        </section>
+        <!-- mobile header section ends -->
+
+        <!--
+                  headers ends
+                  -->
+
+        <!-- home section starts -->
+        <section class="home-section container-xl">
+            <!-- home banner starts -->
+            <div class="home-banner">
+                <div class="home-banner-box active">
+                    <a href="blog-detail.html">
+                        <div class="home-banner-image">
+                            <img src="assets/images/wrestling.jpg" alt="">
+                        </div>
+                        <div class="home-banner-box-details">
+                            <div class="home-banner-category">
+                                <h3>Lastest News</h3>
+                                <span>5th September,2023</span>
+                            </div>
+                            <h2> WWE is coming to Nigeria, the manager announces it on Raw </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="home-banner-box">
+                    <a href="blog-detail.html">
+                        <div class="home-banner-image">
+                            <img src="assets/images/elon.jpg" alt="">
+                        </div>
+                        <div class="home-banner-box-details">
+                            <div class="home-banner-category">
+                                <h3>Lastest News</h3>
+                                <span>5th September,2023</span>
+                            </div>
+                            <h2> Neuro link just recently released a new AI virtual reality goggles</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="home-banner-box">
+                    <a href="blog-detail.html">
+                        <div class="home-banner-image">
+                            <img src="assets/images/facebook.jpg" alt="">
+                        </div>
+                        <div class="home-banner-box-details">
+                            <div class="home-banner-category">
+                                <h3>Lastest News</h3>
+                                <span>5th September,2023</span>
+                            </div>
+                            <h2> What really killed mobbad, son of light, Sammy Larry explains.</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="home-banner-box">
+                    <a href="blog-detail.html">
+                        <div class="home-banner-image">
+                            <img src="assets/images/city.jpg" alt="">
+                        </div>
+                        <div class="home-banner-box-details">
+                            <div class="home-banner-category">
+                                <h3>Lastest News</h3>
+                                <span>5th September,2023</span>
+                            </div>
+                            <h2> What really killed mobbad, son of light, Sammy Larry explains.</h2>
+                        </div>
+                    </a>
+                </div>
+                <!--dots and arrow shift starts -->
+                <div class="buttons">
+                    <span class="next">&#10095;</span>
+                    <span class="prev">&#10094;</span>
+                </div>
+
+                <div class="dotsContainer">
+                    <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+                    <div class="dot" attr='1' onclick="switchImage(this)"></div>
+                    <div class="dot" attr='2' onclick="switchImage(this)"></div>
+                    <div class="dot" attr='3' onclick="switchImage(this)"></div>
+                    <div class="dot" attr='4' onclick="switchImage(this)"></div>
+                </div>
+
+                <!-- dots and arrow shift ends  -->
+            </div>
+            <!-- home banner ends -->
+            <!-- home side starts -->
+            <div class="home-side">
+                <h1>Trending</h1>
+                <div class="home-side-flex">
+                    <a href="#" class="home-side-box">
+                        <img src="assets/images/meetings.jpg" alt="">
+                        <div class="home-side-box-details">
+                            <h2>How Henry kc made it, just by enjoying.</h2>
+                            <div class="home-side-box-category">
+                                <h3>Discovery</h3>
+                                <h4><i class="fa fa-thumbs-up"></i> 840 | <i class="fa fa-eye"></i> 160</h4>
+                            </div>
+                            <span>15 minutes ago</span>
+                        </div>
+                    </a>
+                    <a href="#" class="home-side-box">
+                        <img src="assets/images/latest-2.jpg" alt="">
+                        <div class="home-side-box-details">
+                            <h2>What do you really think is success??</h2>
+                            <div class="home-side-box-category">
+                                <h3>Natural</h3>
+                                <h4><i class="fa fa-thumbs-up"></i> 3640 | <i class="fa fa-eye"></i> 1560</h4>
+                            </div>
+                            <span>1 day ago</span>
+                        </div>
+                    </a>
+                    <a href="#" class="home-side-box">
+                        <img src="assets/images/tren-lg-1.jpg" alt="">
+                        <div class="home-side-box-details">
+                            <h2>Fireboy bought 1.2 billion dollars private jet.</h2>
+                            <div class="home-side-box-category">
+                                <h3>Lifestyle</h3>
+                                <h4><i class="fa fa-thumbs-up"></i> 840 | <i class="fa fa-eye"></i> 160</h4>
+                            </div>
+                            <span>45 minutes ago</span>
+                        </div>
+                    </a>
+                    <a href="#" class="home-side-box">
+                        <img src="assets/images/tren-lg-2.jpg" alt="">
+                        <div class="home-side-box-details">
+                            <h2>An eye for an eye makes all blind.</h2>
+                            <div class="home-side-box-category">
+                                <h3>Facts</h3>
+                                <h4><i class="fa fa-thumbs-up"></i> 104k | <i class="fa fa-eye"></i> 800</h4>
+                            </div>
+                            <span>18 hours ago</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- home side ends -->
+        </section>
+        <!-- home section ends -->
+
+        <!-- top gist section starts -->
+        <section class="top-gist-section container-xl">
+            <div class="first-top-gist-container">
+                <div class="first-top-gist-box">
+                    <img src="assets/images/tren-lg-1.jpg" alt="">
+                    <a href="#">
+                        <div class="first-top-gist-details">
+                            <h3>Business</h3>
+                            <h2> Crypto currency exchange has been in a big rise since 3 months ago, imagine what the shareholders of each one are earning</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="first-top-gist-box">
+                    <img src="assets/images/apple.jpg" alt="">
+                    <a href="#">
+                        <div class="first-top-gist-details">
+                            <h3>Innovation</h3>
+                            <h2>Apple just recently paid a local Nigeria citizen 500 billion dollars a software development idea</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="first-top-gist-box">
+                    <img src="assets/images/scarcity.jpg" alt="">
+                    <a href="#">
+                        <div class="first-top-gist-details">
+                            <h3>Economy</h3>
+                            <h2>The president of Federal Republic of Nigeria has finally removed fuel subsidy, what are the fate of the citizens</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="first-top-gist-box">
+                    <img src="assets/images/city.jpg" alt="">
+                    <a href="#">
+                        <div class="first-top-gist-details">
+                            <h3>Investments</h3>
+                            <h2>Being of the investors at FFS Estate has being one of my greatest investments says Warren Buffet</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="second-top-gist-container">
+                <img src="assets/images/netflix.jpg" alt="">
+                <a href="#">
+                    <div class="second-top-gist-details">
+                        <h3>Entertainments</h3>
+                        <h2>Netflix has officially released Stranger Things Season 5 (five), people reacts over the sudden situation.</h2>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- top gist section ends -->
+
+        <!-- first blog section starts -->
+        <section class="first-blog-section container-xl">
+            <!-- first blog section left side starts  -->
+            <div class="first-blog-section-dropped">
+                <div class="first-blog-section-newsletter">
+                    <p class="first-blog-section-newsletter-title">
+                        Newsletter
+                    </p>
+
+                    <p class="first-blog-section-newsletter-details">
+                        Sign up to be first to receive the latest stories inspiring us, case studies, and industry news.
+                    </p>
+
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your name" required class="form-input" autocomplete="off">
+                        <i class="fas fa-user"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email_address" placeholder="Emaill address" required class="form-input"
+                        autocomplete="off">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="first-blog-section-newsletter-submit">
+                        <button type="submit">Subscribe</button>
+                    </div>
+
+
+                </div>
+                <div class="first-blog-section-story">
+                    <div class="home-side-flex">
+                        <a href="#" class="first-blog-section-story-box">
+                            <img src="assets/images/elon.jpg" alt="">
+                            <div class="first-blog-section-story-details">
+                                <h2>What planet is Elon musk really from, who knows??</h2>
+                                <div class="first-blog-section-read">
+                                    <h5>Elan Hop</h5>
+                                    <h6> <i class="fa fa-eye"></i> 170M | <i class="fa fa-heart"></i> 120M</h6>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="first-blog-section-story-box">
+                            <img src="assets/images/tesla.jpg" alt="">
+                            <div class="first-blog-section-story-details">
+                                <h2>Tesla been up since 1786 has generated 54 trillion dollars</h2>
+                                <div class="first-blog-section-read">
+                                    <h5 class="story-name">Tech Guy</h5>
+                                    <h6> <i class="fa fa-eye"></i> 80M | <i class="fa fa-heart"></i> 958k</h6>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="first-blog-section-story-box">
+                            <img src="assets/images/tren-lg-2.jpg" alt="">
+                            <div class="first-blog-section-story-details">
+                                <h2>Jesus resurrected on the third day, what happens if you die.</h2>
+                                <div class="first-blog-section-read">
+                                    <h5 class="story-name">Arch Angel</h5>
+                                    <h6> <i class="fa fa-eye"></i> 40B | <i class="fa fa-heart"></i> 16B</h6>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="first-blog-section-story-box">
+                            <img src="assets/images/meetings2.jpg" alt="">
+                            <div class="first-blog-section-story-details">
+                                <h2>What the use of afterlife when we all are to die?</h2>
+                                <div class="first-blog-section-read">
+                                    <h5 class="story-name">Lucifer Down</h5>
+                                    <h6> <i class="fa fa-eye"></i> 25k | <i class="fa fa-heart"></i> 10k</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- first blog section left side ends -->
+
+            <!-- first blog section main starts -->
+            <div class="first-blog-section-main">
+                <div class="first-blog-section-box">
+                    <img src="assets/images/wrestling.jpg" alt="">
+                    <div class="first-blog-section-details">
+                        <div class="first-blog-section-category">
+                            <div class="first-blog-section-tags">
+                                <a href="#">sports</a>
+                                <a href="#">popular</a>
+                                <a href="#">great</a>
+                            </div>
+                            <span>35 minutes ago</span>
+                        </div>
+                        <h2>Wrestlemania taking place at O2 arena in London</h2>
+                        <div class="first-blog-section-explain">
+                            <b>Lorem ipsum dolor sit amet consectur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae.</b>
+                        </div>
+                        <div class="first-blog-section-read">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="first-blog-section-box">
+                    <img src="assets/images/elon2.jpg" alt="">
+                    <div class="first-blog-section-details">
+                        <div class="first-blog-section-category">
+                            <div class="first-blog-section-tags">
+                                <a href="#">space</a>
+                                <a href="#">science</a>
+                                <a href="#">tech</a>
+                            </div>
+                            <span>35 minutes ago</span>
+                        </div>
+                        <h2>CEO of SpaceX has approved the use of afterlife space ship</h2>
+                        <div class="first-blog-section-explain">
+                            <b>Lorem ipsum dolor sit amet consectur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae.</b>
+                        </div>
+                        <div class="first-blog-section-read">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="first-blog-section-box">
+                    <img src="assets/images/scarcity.jpg" alt="">
+                    <div class="first-blog-section-details">
+                        <div class="first-blog-section-category">
+                            <div class="first-blog-section-tags">
+                                <a href="#">hardship</a>
+                                <a href="#">fuel</a>
+                                <a href="#">Labour</a>
+                            </div>
+                            <span>35 minutes ago</span>
+                        </div>
+                        <h2>Labour Union has finally decided to take any indefinite strike</h2>
+                        <div class="first-blog-section-explain">
+                            <b>Lorem ipsum dolor sit amet consectur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae..</b>
+                        </div>
+                        <div class="first-blog-section-read">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="first-blog-section-box">
+                    <img src="assets/images/facebook.jpg" alt="">
+                    <div class="first-blog-section-details">
+                        <div class="first-blog-section-category">
+                            <div class="first-blog-section-tags">
+                                <a href="#">Lifestyle</a>
+                                <a href="#">Death</a>
+                                <a href="#">Arrest</a>
+                            </div>
+                            <span>35 minutes ago</span>
+                        </div>
+                        <h2>Meta has finally approved the end to end encryption data</h2>
+                        <div class="first-blog-section-explain">
+                            <b>Lorem ipsum dolor sit amet consectur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae..</b>
+                        </div>
+                        <div class="first-blog-section-read">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- first blog section main ends -->
+        </section>
+        <!-- first blog section ends  -->
+
+        <!-- membership subscription starts -->
+        <section class="membership-section container-xl">
+            <form action="">
+                <h3>Subscribe for latest updates</h3>
+                <input type="email" name="" placeholder="Enter your email address" id="" class="membership-section-input">
+                <button type="submit" class="membership-section-button">Subscribe</button>
+            </form>
+        </section>
+        <!-- membership subscription ends -->
+
+        <!-- second blog section starts -->
+        <section class="second-blog-section container-xl">
+            <div class="second-blog-section-first">
+                <div class="second-blog-section-first-blog-container">
+                    <section style="padding:0px;" class="top-gist-section container-xl">
+                        <div class="first-top-gist-container">
+                            <div class="first-top-gist-box">
+                                <img src="assets/images/tren-lg-1.jpg" alt="">
+                                <a href="#">
+                                    <div class="first-top-gist-details">
+                                        <h3>Business</h3>
+                                        <h2> Crypto currency exchange has been in a big rise since 3 months ago, imagine what the shareholders of each one are earning</h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="first-top-gist-box">
+                                <img src="assets/images/apple.jpg" alt="">
+                                <a href="#">
+                                    <div class="first-top-gist-details">
+                                        <h3>Innovation</h3>
+                                        <h2>Apple just recently paid a local Nigeria citizen 500 billion dollars a software development idea</h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="second-top-gist-container">
+                            <div style="margin-bottom:1rem" class="first-top-gist-box">
+                                <img src="assets/images/tren-lg-1.jpg" alt="">
+                                <a href="#">
+                                    <div class="first-top-gist-details">
+                                        <h3>Business</h3>
+                                        <h2> Crypto currency exchange has been in a big rise since 3 months ago, imagine what the shareholders of each one are earning</h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="first-top-gist-box">
+                                <img src="assets/images/apple.jpg" alt="">
+                                <a href="#">
+                                    <div class="first-top-gist-details">
+                                        <h3>Innovation</h3>
+                                        <h2>Apple just recently paid a local Nigeria citizen 500 billion dollars a software development idea</h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+                <div class="second-blog-section-second-blog-container">
+                    <a href="#" class="second-blog-section-second-blog-box">
+                        <img src="assets/images/facebook.jpg" alt="">
+                        <div class="second-blog-section-second-blog-details">
+                            <h5>Business</h5>
+                            <h2>Facebook have planned to launch a meta satellite for software features</h2>
+                            <div class="second-blog-section-second-blog-bottom">
+                                <h4>creative</h4>
+                                <h4>space tech</h4>
+                                <h4>Features</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="second-blog-section-second-blog-box">
+                        <img src="assets/images/tesla.jpg" alt="">
+                        <div class="second-blog-section-second-blog-details">
+                            <h5>Company</h5>
+                            <h2>Tesla has reduced the price of model 3 and model y in USA, UK and Nigeria</h2>
+                            <div class="second-blog-section-second-blog-bottom">
+                                <h4>idea</h4>
+                                <h4>electric car</h4>
+                                <h4>computer</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="second-blog-section-second">
+                <div class="second-blog-section-left-side-container">
+                    <a href="#" class="second-blog-section-left-side-box">
+                        <div class="second-blog-section-left-side-details">
+                            <h2>How God's Creativity works and it's power</h2>
+                            <div class="second-blog-section-left-side-read">
+                                <h3>34 minutes ago</h3>
+                            </div>
+                        </div>
+                        <div class="second-blog-section-left-side-box-image">
+                            <img src="assets/images/tren-lg-2.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="second-blog-section-left-side-box">
+                        <div class="second-blog-section-left-side-details">
+                            <h2>How to make 1 million USD dollars in a day  </h2>
+                            <div class="second-blog-section-left-side-read">
+                                <h3>18 minutes ago</h3>
+                            </div>
+                        </div>
+                        <div class="second-blog-section-left-side-box-image">
+                            <img src="assets/images/stockmarket.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="video-container">
+                    <h1>Viral Videos</h1>
+                    <div class="scrollable-container">
+                        <div class="video-container-flex">
+                            <div class="detail-video">
+                                <img class="detail-video-image" src="assets/images/latest-2.jpg" alt="YouTube Video Thumbnail">
+                                <div class="overlay"></div>
+                                <a href="#" class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <div class="detail-video-info">
+                                    <div class="detail-video-title">
+                                        The power of teamwork can give you goosebumps anytime
+                                    </div>
+                                    <div class="detail-video-details">
+                                        <i class="fas fa-clock clock-icon"></i>
+                                        <h5>7:00</h5>
+                                        <p>
+                                            &nbsp;&bull;&nbsp;
+                                        </p>
+                                        <h5>may 16, 2023</h5>
+                                    </div>
+                                </div>
+                                <div class="detail-video-link">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                            <div class="detail-video">
+                                <img class="detail-video-image" src="assets/images/vr.jpg" alt="YouTube Video Thumbnail">
+                                <div class="overlay"></div>
+                                <a href="#" class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <div class="detail-video-info">
+                                    <div class="detail-video-title">
+                                        How to make things you see in visual reality goggles a reality
+                                    </div>
+                                    <div class="detail-video-details">
+                                        <i class="fas fa-clock clock-icon"></i>
+                                        <h5>4:30</h5>
+                                        <p>
+                                            &nbsp;&bull;&nbsp;
+                                        </p>
+                                        <h5>Oct 1, 2023</h5>
+                                    </div>
+                                </div>
+                                <div class="detail-video-link">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                            <div class="detail-video">
+                                <img class="detail-video-image" src="assets/images/man.jpg" alt="YouTube Video Thumbnail">
+                                <div class="overlay"></div>
+                                <a href="#" class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <div class="detail-video-info">
+                                    <div class="detail-video-title">
+                                        Mobbad's enemy where always after him but we never saw it
+                                    </div>
+                                    <div class="detail-video-details">
+                                        <i class="fas fa-clock clock-icon"></i>
+                                        <h5>15:00</h5>
+                                        <p>
+                                            &nbsp;&bull;&nbsp;
+                                        </p>
+                                        <h5>Sept 14, 2023</h5>
+                                    </div>
+                                </div>
+                                <div class="detail-video-link">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                            <div class="detail-video">
+                                <img class="detail-video-image" src="assets/images/scarcity.jpg" alt="YouTube Video Thumbnail">
+                                <div class="overlay"></div>
+                                <a href="#" class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <div class="detail-video-info">
+                                    <div class="detail-video-title">
+                                        What trap has Nigerians put themselves in, lord please have mercy
+                                    </div>
+                                    <div class="detail-video-details">
+                                        <i class="fas fa-clock clock-icon"></i>
+                                        <h5>10:45</h5>
+                                        <p>
+                                            &nbsp;&bull;&nbsp;
+                                        </p>
+                                        <h5>Mar 24, 2023</h5>
+                                    </div>
+                                </div>
+                                <div class="detail-video-link">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- second blog section ends -->
+        <section class="top-offer container-xl">
+            <div class="container-xl">
+                <div class="row">
+
+                    <div class="text-center">
+
+                        <h2>Our Top Offers</h2>
+
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <nav>
+                            <div class="nav top-offer-box flex-column align-items-baseline" id="nav-tab" role="tablist">
+
+                                <button class="top-offer-link active" id="nav-strategy-tab" data-bs-toggle="tab" data-bs-target="#nav-strategy" type="button" role="tab" aria-controls="nav-strategy" aria-selected="false">
+                                    <h3>Blog Your Contents on CurrentBlog</h3>
+
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore</span>
+                                </button>
+
+
+                                <button class="top-offer-link" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#nav-business" type="button" role="tab" aria-controls="nav-business" aria-selected="true">
+                                    <h3>Forex Trading</h3>
+
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore</span>
+                                </button>
+
+                                <button class="top-offer-link" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-video" type="button" role="tab" aria-controls="nav-video" aria-selected="false">
+                                    <h3>Become Our Blog Window</h3>
+
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore</span>
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show" id="nav-business" role="tabpanel" aria-labelledby="nav-intro-tab">
+                                <img src="assets/images/stockmarket.jpg" class="img-fluid" alt="">
+
+                                <h5 class="mt-4 mb-2">Forex of the future</h5>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore
+                                </p>
+
+                                <ul>
+                                    <li>Helping Startup companies</li>
+
+                                    <li>Join the Globe Trading community</li>
+
+                                    <li>Standard Economy</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-pane fade show active" id="nav-strategy" role="tabpanel" aria-labelledby="nav-strategy-tab">
+
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-12">
+                                        <div class="pricing-item">
+                                            <h4>Basic Plan</h4>
+                                            <ul class="first-plan">
+                                                <li> Advertise it in at least 10 blogs</li>
+                                                <li>Display your personal Catalog</li>
+                                                <li>Make you feel better</li>
+                                                <li>CurrentBlog rates you 100 percent</li>
+                                                <li>Show Your contents location</li>
+                                            </ul>
+                                            <span class="price">$50 USD</span>
+                                            <div class="border-button">
+                                                <a href="#">Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12">
+
+                                        <div class="pricing-item">
+                                            <h4>Standard Plan</h4>
+                                            <ul class="second-plan">
+                                                <li>Advertise it in at least 50 blogs</li>
+                                                <li>Display your company catalog</li>
+                                                <li>Make you feel great</li>
+                                                <li>CurrentBlog rates you 100 percent</li>
+                                                <li>Show Your contents location</li>
+                                            </ul>
+                                            <span class="price">$100 USD</span>
+                                            <div class="border-button">
+                                                <a href="#">Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade show" id="nav-video" role="tabpjanel" aria-labelledby="nav-video-tab">
+                                <img src="assets/images/apple.jpg" class="img-fluid" alt="">
+
+                                <h5 class="mt-4 mb-2">Become one of the Admin of CurrentBlog</h5>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <h6 class="site-footer-title mb-3">Resources</h6>
+
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Home</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">What we do</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">FAQs</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                        <h6 class="site-footer-title mb-3">Information</h6>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="tel: 152-46434-546" class="site-footer-link">
+                                123-409-34713
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <a href="mailto:CurrentBlog.com" class="site-footer-link">
+                                CurrentBlog.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0">
+                        <p class="copyright-text mt-lg-5 mt-4">
+                            Copyright © 2023 CurrentBlog | All rights reserved.
+                            <br><br>Designed By: <a rel="nofollow" href="#" target="_blank" style="color:#fff;">Henry Kc</a>
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/navbar.js"></script>
+</body>
+</html>

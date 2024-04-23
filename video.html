@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrentBlog: Hey, we’re CurrentBlog See our thoughts, stories and ideas.</title>
+    <!--
+                  - favicon
+                -->
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon">
+    <!--
+                  - css links
+                -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel=" stylesheet" href="assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+    <!--
+                  - Font Awesome CSS link
+                -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!--
+                headers
+                -->
+    <!-- header section starts  -->
+    <header class="header-default">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-xl">
+                <!-- logo  -->
+                <a href="home.html" class="navbar-brand">
+                    <h1>CurrentBlog</h1>
+                </a>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown active">
+                            <a href="home.html" class="nav-link dropdown-toggle">Home</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" class="dropdown-item">Fashion</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Movies</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Electronic</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Cricket</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Technology</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog-list.html" class="nav-link">Latest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog-list.html" class="nav-link">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="video.html" class="nav-link">Viral videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- right side of header  -->
+                <div class="header-right">
+                    <!-- buttons  -->
+                    <div class="header-buttons">
+                        <input type="search" class="header-search-input" placeholder="search.....">
+                        <button class="icon-button" data-search-toggler>
+                            <i class="fas fa-th-large menu"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--  header section ends  -->
+
+    <!-- medium header section starts -->
+    <div class="medium-header" data-second-navbar>
+        <header class="header-default2">
+            <nav class="navbar2 navbar-expand-lg">
+                <div class="container-xl">
+                    <div class="navbar-collapse navclose">
+                        <ul class="navbar-nav2 mr-auto">
+                            <li class="nav-item dropdown active">
+                                <a href="home.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="blog-list.html" class="nav-link">Latest</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="blog-list.html" class="nav-link">Trending</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="video.html" class="nav-link">Viral videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="fas fa-times closebutton" data-closebutton data-search-toggler></div>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="dim-screen" data-overlay data-search-toggler></div>
+    <!-- medium header section ends -->
+
+    <!-- mobile header section starts -->
+    <section class="mobile-nav">
+        <div class="navs contaner">
+            <div class="navbar-brand2">
+                <h1>CurrentBlog</h1>
+            </div>
+            <div class="search-box">
+                <input type="search" name="" id="search-input" placeholder="search....">
+                <i class="bx bx-search"></i>
+            </div>
+            <label for="nav-check" class="nav-ink">
+                <i class="fas fa-th-large" id="menuIcon"></i>
+            </label>
+        </div>
+        <div class="collapse navbar-collapse" id="mobile-navbar">
+            <ul class="navbar-nav mr-auto navbar-contents">
+                <div class="navbar-brand2">
+                    <h1>CurrentBlog</h1>
+                </div>
+                <li class="nav-item dropdown active">
+                    <a href="home.html" class="nav-link dropdown-toggle">Home</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#" class="dropdown-item">Fashion</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item">Movies</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item">Electronic</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item">Cricket</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item">Technology</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="blog-list.html" class="nav-link">Latest</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog-list.html" class="nav-link">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a href="video.html" class="nav-link">Viral Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <div class="social-network">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </ul>
+            <div class="fas fa-times" id="closeIcon"></div>
+        </div>
+    </section>
+    <!-- mobile header section ends -->
+
+    <!--
+              headers ends
+              -->
+
+    <!-- video main section starts -->
+    <section class="video-main-section container-xl">
+        <div class="video-main-section-first-container">
+            <video autoplay="" loop="" muted="" class="video-main-section-first-container-img" poster="">
+                <source src="assets/images/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="video-main-section-first-container-detail">
+                <h2>Top ways to make 1 million dollars within 24 hours</h2>
+                <span><i class="fa fa-eye"></i>1,089,976 views</span>
+                <span>Watch the trailer</span>
+            </div>
+            <a href="#" class="fas fa-play video-main-section-first-container-playbutton"></a>
+        </div>
+        <div class="video-main-section-second-container">
+            <div class="detail-video">
+                <img class="detail-video-image" src="assets/images/scarcity.jpg" alt="YouTube Video Thumbnail">
+                <div class="overlay"></div>
+                <a href="#" class="play-button">
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="detail-video-info">
+                    <div class="detail-video-title">
+                        How fuel scarcity can be stopped in Federal Republic of Nigeria
+                    </div>
+                    <div class="detail-video-details">
+                        <i class="fas fa-clock clock-icon"></i>
+                        <h5>7:00</h5>
+                        <p>
+                            &nbsp;&bull;&nbsp;
+                        </p>
+                        <h5>may 16, 2023</h5>
+                    </div>
+                </div>
+                <div class="detail-video-link">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="detail-video">
+                <img class="detail-video-image" src="assets/images/meetings2.jpg" alt="YouTube Video Thumbnail">
+                <div class="overlay"></div>
+                <a href="#" class="play-button">
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="detail-video-info">
+                    <div class="detail-video-title">
+                        Netflix meeting decision on releasing Stranger Things season 5
+                    </div>
+                    <div class="detail-video-details">
+                        <i class="fas fa-clock clock-icon"></i>
+                        <h5>1:30</h5>
+                        <p>
+                            &nbsp;&bull;&nbsp;
+                        </p>
+                        <h5>Oct 1, 2023</h5>
+                    </div>
+                </div>
+                <div class="detail-video-link">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- video main section ends -->
+
+    <!-- Videos slide section starts -->
+    <section class="videos-slide-section container-xl">
+        <div class="heading">
+            <h2 class="heading-title">Viral Videos</h2>
+            <div class="swiper-btn">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="videos-slide swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="videos-slide-box">
+                        <img src="assets/images/wrestling.jpg" alt="" class="videos-slide-box-img">
+                        <div class="videos-slide-box-detail">
+                            <h2> Wrestmania is going live on 02 arena tomorrow by 7.00am</h2>
+                            <span>Sports</span>
+                        </div>
+                        <a href="#" class="fas fa-play video-main-section-first-container-playbutton"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="videos-slide-box">
+                            <img src="assets/images/elon2.jpg" alt="" class="videos-slide-box-img">
+                            <div class="videos-slide-box-detail">
+                                <h2>3 steps that you will know you on the right path to being successful </h2>
+                                <span>Motivational</span>
+                            </div>
+                            <a href="#" class="fas fa-play video-main-section-first-container-playbutton"></a>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="videos-slide-box">
+                            <img src="assets/images/new-york.jpg" alt="" class="videos-slide-box-img">
+                            <div class="videos-slide-box-detail">
+                                <h2>New-york is celebrating the birth of it's hero Marther</h2>
+                                <span>Celebration</span>
+                            </div>
+                            <a href="#" class="fas fa-play video-main-section-first-container-playbutton"></a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- video slide section ends -->
+
+    <!-- video sub section starts -->
+    <section class="video-sub-section container-xl">
+        <div class="video-main-section-first-container">
+            <img src="assets/images/barbie.jpg" alt="" class="video-main-section-first-container-img">
+            <div class="video-main-section-first-container-detail">
+                <h2>Barbie Full movie (2023)</h2>
+                <span><i class="fa fa-eye"></i>67,863,847 views </span>
+                <span>Adventure</span>
+            </div>
+            <a href="#" class="fas fa-play video-main-section-first-container-playbutton"></a>
+        </div>
+        <div class="video-main-section-second-container">
+            <div class="detail-video">
+                <img class="detail-video-image" src="assets/images/tren-sm-3.jpg" alt="YouTube Video Thumbnail">
+                <div class="overlay"></div>
+                <a href="#" class="play-button">
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="detail-video-info">
+                    <div class="detail-video-title">
+                        Does it even matter, when you work hard channeling it to the wrong path
+                    </div>
+                    <div class="detail-video-details">
+                        <i class="fas fa-clock clock-icon"></i>
+                        <h5>7:00</h5>
+                        <p>
+                            &nbsp;&bull;&nbsp;
+                        </p>
+                        <h5>may 16, 2023</h5>
+                    </div>
+                </div>
+                <div class="detail-video-link">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="detail-video">
+                <img class="detail-video-image" src="assets/images/meetings.jpg" alt="YouTube Video Thumbnail">
+                <div class="overlay"></div>
+                <a href="#" class="play-button">
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="detail-video-info">
+                    <div class="detail-video-title">
+                        Google Officials has approved the use of Google Play Flight
+                    </div>
+                    <div class="detail-video-details">
+                        <i class="fas fa-clock clock-icon"></i>
+                        <h5>25:30</h5>
+                        <p>
+                            &nbsp;&bull;&nbsp;
+                        </p>
+                        <h5>Oct 1, 2023</h5>
+                    </div>
+                </div>
+                <div class="detail-video-link">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- video sub section ends -->
+
+    <!-- video grid section starts -->
+    <section class="video-main-grid container-xl">
+        <div class="detail-video">
+            <img class="detail-video-image" src="assets/images/latest-2.jpg" alt="YouTube Video Thumbnail">
+            <div class="overlay"></div>
+            <a href="#" class="play-button">
+                <i class="fas fa-play"></i>
+            </a>
+            <div class="detail-video-info">
+                <div class="detail-video-title">
+                    The real spirit of teamwork can give you real goosebumps
+                </div>
+                <div class="detail-video-details">
+                    <i class="fas fa-clock clock-icon"></i>
+                    <h5>18:00</h5>
+                    <p>
+                        &nbsp;&bull;&nbsp;
+                    </p>
+                    <h5>may 16, 2023</h5>
+                </div>
+            </div>
+            <div class="detail-video-link">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+        <div class="detail-video">
+            <img class="detail-video-image" src="assets/images/netflix.jpg" alt="YouTube Video Thumbnail">
+            <div class="overlay"></div>
+            <a href="#" class="play-button">
+                <i class="fas fa-play"></i>
+            </a>
+            <div class="detail-video-info">
+                <div class="detail-video-title">
+                    Netflix has approved the HT Cash for the use of motivational movie
+                </div>
+                <div class="detail-video-details">
+                    <i class="fas fa-clock clock-icon"></i>
+                    <h5>1:30:00</h5>
+                    <p>
+                        &nbsp;&bull;&nbsp;
+                    </p>
+                    <h5>Oct 1, 2023</h5>
+                </div>
+            </div>
+            <div class="detail-video-link">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+        <div class="detail-video">
+            <img class="detail-video-image" src="assets/images/derockroman.jpg" alt="YouTube Video Thumbnail">
+            <div class="overlay"></div>
+            <a href="#" class="play-button">
+                <i class="fas fa-play"></i>
+            </a>
+            <div class="detail-video-info">
+                <div class="detail-video-title">
+                    The vacation of ages De Rock and Roman Reigns go for summer vacation
+                </div>
+                <div class="detail-video-details">
+                    <i class="fas fa-clock clock-icon"></i>
+                    <h5>45:08</h5>
+                    <p>
+                        &nbsp;&bull;&nbsp;
+                    </p>
+                    <h5>Oct 1, 2023</h5>
+                </div>
+            </div>
+            <div class="detail-video-link">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+        <div class="detail-video">
+            <img class="detail-video-image" src="assets/images/wrestling.jpg" alt="YouTube Video Thumbnail">
+            <div class="overlay"></div>
+            <a href="#" class="play-button">
+                <i class="fas fa-play"></i>
+            </a>
+            <div class="detail-video-info">
+                <div class="detail-video-title">
+                    Seth Rollins vs Miz, showdown of the year
+                </div>
+                <div class="detail-video-details">
+                    <i class="fas fa-clock clock-icon"></i>
+                    <h5>34:30</h5>
+                    <p>
+                        &nbsp;&bull;&nbsp;
+                    </p>
+                    <h5>Oct 1, 2023</h5>
+                </div>
+            </div>
+            <div class="detail-video-link">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+        <div class="detail-video">
+            <img class="detail-video-image" src="assets/images/stockmarket.jpg" alt="YouTube Video Thumbnail">
+            <div class="overlay"></div>
+            <a href="#" class="play-button">
+                <i class="fas fa-play"></i>
+            </a>
+            <div class="detail-video-info">
+                <div class="detail-video-title">
+                    There has been a rise in bitcoin an hour ago, who will be the next to cash out
+                </div>
+                <div class="detail-video-details">
+                    <i class="fas fa-clock clock-icon"></i>
+                    <h5>7:00</h5>
+                    <p>
+                        &nbsp;&bull;&nbsp;
+                    </p>
+                    <h5>may 16, 2023</h5>
+                </div>
+            </div>
+            <div class="detail-video-link">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+        <div class="detail-video">
+            <img class="detail-video-image" src="assets/images/tren-sm-3.jpg" alt="YouTube Video Thumbnail">
+            <div class="overlay"></div>
+            <a href="#" class="play-button">
+                <i class="fas fa-play"></i>
+            </a>
+            <div class="detail-video-info">
+                <div class="detail-video-title">
+                    I don't even know what else to write again in this page says Henry kc
+                </div>
+                <div class="detail-video-details">
+                    <i class="fas fa-clock clock-icon"></i>
+                    <h5>18:25</h5>
+                    <p>
+                        &nbsp;&bull;&nbsp;
+                    </p>
+                    <h5>Oct 1, 2023</h5>
+                </div>
+            </div>
+            <div class="detail-video-link">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+    </section>
+    <!-- video grid section ends -->
+
+    <!-- Videos slide section starts -->
+    <section class="videos-slide-section container-xl">
+        <div class="heading">
+            <h2 class="heading-title">Viral Videos</h2>
+            <div class="swiper-btn">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="videos-slide swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="videos-slide-box">
+                        <img src="assets/images/city.jpg" alt="" class="videos-slide-box-img">
+                        <div class="videos-slide-box-detail">
+                            <h2> Wrestmania is going live on 02 arena tomorrow by 7.00am</h2>
+                            <span>Sports</span>
+                        </div>
+                        <a href="#" class="fas fa-play video-main-section-first-container-playbutton"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="videos-slide-box">
+                        <img src="assets/images/vr.jpg" alt="" class="videos-slide-box-img">
+                        <div class="videos-slide-box-detail">
+                            <h2>3 steps that you will know you on the right path to being successful </h2>
+                            <span>Motivational</span>
+                        </div>
+                        <a href="#" class="fas fa-play video-main-section-first-container-playbutton"></a>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="videos-slide-box">
+                        <img src="assets/images/latest-2.jpg" alt="" class="videos-slide-box-img">
+                        <div class="videos-slide-box-detail">
+                            <h2>New-york is celebrating the birth of it's hero Marther</h2>
+                            <span>Celebration</span>
+                        </div>
+                        <a href="#" class="fas fa-play video-main-section-first-container-playbutton"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- video slide section ends -->
+
+    <!--
+              footer starts
+              -->
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h6 class="site-footer-title mb-3">Resources</h6>
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Home</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">What we do</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">FAQs</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                    <h6 class="site-footer-title mb-3">Information</h6>
+
+                    <p class="text-white d-flex mb-1">
+                        <a href="tel: 3492-84659-594" class="site-footer-link">
+                            123-409-34713
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <a href="mailto:CurrentBlog.com" class="site-footer-link">
+                            CurrentBlog.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0">
+                    <p class="copyright-text mt-lg-5 mt-4">
+                        Copyright © 2023 CurrentBlog | All rights reserved.
+                        <br><br>Designed By: <a rel="nofollow" href="#" target="_blank" style="color:#fff;">Henry Kc</a>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!--
+              footer ends
+              -->
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.videos-slide', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 5500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                280: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                600: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+            },
+        });
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/navbar.js"></script>
+</body>
+</html>

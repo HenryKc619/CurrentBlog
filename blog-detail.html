@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrentBlog: Hey, we’re CurrentBlog See our thoughts, stories and ideas.</title>
+    <!--
+              - favicon
+            -->
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon">
+    <!--
+              - css links
+            -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel=" stylesheet" href="assets/css/plugins/slick.css">
+    <!--
+              - Font Awesome CSS link
+            -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    .comment-list-container {
+        border-radius: 15px;
+    }
+    .comment-list-container-title {
+        margin-block-end: 5px;
+        border-block-end: .2rem solid var(--guess);
+    }
+    .comment-list-container-title .span::after {
+        content: "";
+        display: block;
+        width: 96px;
+        height: 3px;
+        background-color: var(--bg-carolina-blue);
+        margin-block-start: 10px;
+    }
+    .popular-list > li:not(:last-child) .card-content {
+        border-block-end: 2px solid red;
+    }
+    .comment-card {
+        background: white;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        box-shadow: 0px 2px 5px 0px var(--cultured-white);
+        padding: 10px;
+    }
+    .comment-card .comment-text {
+        color: var(--text-wild-blue-yonder);
+        font-size: var(--fontSize-6);
+        margin-block-end: 0px;
+    }
+    .comment-list {}
+    .comment-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0rem;
+    }
+    .comment-card .profile-card {
+        color: var(--black);
+    }
+    .comment-text {
+        display: inline-flex;
+        align-items: flex-start;
+    }
+    .comment-card .comment-date {
+        font-size: var(--fontSize-7);
+    }
+    .profile-banner {
+        height: 50px;
+        width: 50px;
+    }
+    .profile-banner img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+</style>
+<body>
+    <div class="dim-screen"></div>
+    <!--
+            headers
+            -->
+    <!-- header section starts  -->
+    <header class="header-default">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-xl">
+                <!-- logo  -->
+                <a href="home.html" class="navbar-brand">
+                    <h1>CurrentBlog</h1>
+                </a>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown active">
+                            <a href="home.html" class="nav-link dropdown-toggle">Home</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" class="dropdown-item">Fashion</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Movies</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Electronic</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Cricket</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Technology</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog-list.html" class="nav-link">Latest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog-list.html" class="nav-link">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="video.html" class="nav-link">Viral videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- right side of header  -->
+                <div class="header-right">
+                    <!-- buttons  -->
+                    <div class="header-buttons">
+                        <input type="search" class="header-search-input" placeholder="search.....">
+                        <button class="icon-button" data-search-toggler>
+                            <i class="fas fa-th-large menu"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--  header section ends  -->
+
+    <!-- medium header section starts -->
+    <div class="medium-header" data-second-navbar>
+        <header class="header-default2">
+            <nav class="navbar2 navbar-expand-lg">
+                <div class="container-xl">
+                    <div class="navbar-collapse navclose">
+                        <ul class="navbar-nav2 mr-auto">
+                            <li class="nav-item dropdown active">
+                                <a href="home.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="blog-list.html" class="nav-link">Latest</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="blog-list.html" class="nav-link">Trending</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="video.html" class="nav-link">Viral videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="fas fa-times closebutton" data-closebutton data-search-toggler></div>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="dim-screen" data-overlay data-search-toggler></div>
+    <!-- medium header section ends -->
+
+    <!-- mobile header section starts -->
+    <section class="mobile-nav">
+        <div class="navs contaner">
+            <div class="navbar-brand2">
+                <h1>CurrentBlog</h1>
+            </div>
+            <div class="search-box">
+                <input type="search" name="" id="search-input" placeholder="search....">
+                <i class="bx bx-search"></i>
+            </div>
+            <label for="nav-check" class="nav-ink">
+                <i class="fas fa-th-large" id="menuIcon"></i>
+            </label>
+        </div>
+        <div class="collapse navbar-collapse" id="mobile-navbar">
+            <ul class="navbar-nav mr-auto navbar-contents">
+                <div class="navbar-brand2">
+                    <h1>CurrentBlog</h1>
+                </div>
+                <li class="nav-item dropdown active">
+                    <a href="home.html" class="nav-link dropdown-toggle">Home</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#" class="dropdown-item">Fashion</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item">Movies</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item">Electronic</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item">Cricket</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item">Technology</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="blog-list.html" class="nav-link">Latest</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog-list.html" class="nav-link">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a href="video.html" class="nav-link">Viral Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <div class="social-network">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </ul>
+            <div class="fas fa-times" id="closeIcon"></div>
+        </div>
+    </section>
+    <!-- mobile header section ends -->
+
+    <!--
+          headers ends
+          -->
+
+    <!-- detail first section starts -->
+    <section class="detail-section container-xl">
+
+        <div class="detail-section-first">
+            <div class="detail-section-first-container">
+                <!-- News Head -->
+                <div class="detail-section-first-head">
+                    <img src="assets/images/netflix.jpg" alt="#">
+                    <div class="detail-image-tag">
+                        <h3>Entertainment</h3>
+                    </div>
+                </div>
+                <!-- News Title -->
+                <h1 class="detail-section-first-title"><a href="#">Why Netflix just recently released Stranger Things season 5 Instead of 7th May 2035.</a></h1>
+                <!-- Meta -->
+                <div class="meta">
+                    <div class="meta-left">
+                        <span class="author"><a href="#"><img src="assets/images/roman.jpg" alt="#">Henry Kc</a></span>
+                        <span class="date"><i class="fa fa-clock-o"></i>47 minutes ago</span>
+                    </div>
+                    <div class="meta-right">
+                        <span class="comments"><a href="#"><i class="fa fa-comments"></i>05 Comments</a></span>
+                        <span class="views"><i class="fa fa-eye"></i>33K Views</span>
+                    </div>
+                </div>
+                <!-- News Text -->
+                <div class="detail-section-first-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse porttitor nunc a sodales tempor. Mauris sed felis maximus, interdum metus vel, tincidunt diam.
+                    </p>
+                    <p>
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse porttitor nunc a sodales tempor. Mauris sed felis maximus, interdum metus vel, tincidunt diam. Nam ac risus vitae sem vehicula egestas. Sed velit nulla, viverra non commod
+                    </p>
+                    <div class="detail-section-first-image-container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="detail-section-first-image">
+                                    <img src="assets/images/meetings2.jpg" alt="#">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="detail-section-first-image">
+                                    <img src="assets/images/facebook.jpg" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse porttitor nunc a sodales tempor. Mauris sed felis maximus, interdum metus vel, tincidunt diam.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse porttitor nunc a sodales tempor. Mauris sed felis maximus, interdum metus vel, tincidunt diam. Nam ac risus vitae sem vehicula egestas. Sed velit nulla, viverra non commodo et, sodales id dui.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse
+                    </p>
+                </div>
+                <div class="blog-bottom">
+                    <div class="detail-social-container">
+                        <div class="detail-social-link">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="detail-first-section-second-container">
+            <div class="detail-first-section-second-container-first">
+                <div class="detail-video">
+                    <img class="detail-video-image" src="assets/images/meetings2.jpg" alt="YouTube Video Thumbnail">
+                    <div class="overlay"></div>
+                    <a href="#" class="play-button">
+                        <i class="fas fa-play"></i>
+                    </a>
+                    <div class="detail-video-info">
+                        <div class="detail-video-title">
+                            Netflix meeting decision on releasing Stranger Things season 5
+                        </div>
+                        <div class="detail-video-details">
+                            <i class="fas fa-clock clock-icon"></i>
+                            <h5>1:30</h5>
+                            <p>
+                                &nbsp;&bull;&nbsp;
+                            </p>
+                            <h5>Oct 1, 2023</h5>
+                        </div>
+                    </div>
+                    <div class="detail-video-link">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-first-section-second-container-second">
+                <div class="comment-list-container">
+
+                    <h3 class="comment-list-container-title">
+                        <span class="span">Last Comment</span>
+                    </h3>
+
+                    <div class="comment-list">
+
+                        <div class="comment-card">
+                            <blockquote class="comment-text">
+                                <li></li> you are a professional software developer and make the containers clickable and make the containers clickable and make
+                            </blockquote>
+
+                            <div class="profile-card">
+                                <figure class="profile-banner img-holder">
+                                    <img src="assets/images/man.jpg" width="32" height="32" loading="lazy" alt="Jane Cooper">
+                                </figure>
+
+                                <div class="comment-details">
+                                    <p class="comment-title">
+                                        Jane Cooper
+                                    </p>
+
+                                    <time class="comment-date" datetime="2022-04-15">3 minutes ago</time>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="comment-card">
+                            <blockquote class="comment-text">
+                                <li></li>the how are you going to flex to naw end of the following devices and also make the max-width of the following devices and
+                            </blockquote>
+
+                            <div class="profile-card">
+                                <figure class="profile-banner img-holder">
+                                    <img src="assets/images/roman.jpg" width="32" height="32" loading="lazy" alt="Katen Doe">
+                                </figure>
+
+                                <div class="comment-details">
+                                    <p class="comment-title">
+                                        Katen Doe
+                                    </p>
+
+                                    <time class="comment-date" datetime="2022-04-15">20 minutes ago</time>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="comment-card">
+
+                            <blockquote class="comment-text">
+                                <li></li> how are you doing this morning but I can't wait till I see you in the software update on God I'm so sorry
+                            </blockquote>
+
+                            <div class="profile-card">
+                                <figure class="profile-banner img-holder">
+                                    <img src="./assets/images/elon.jpg" width="32" height="32" loading="lazy"
+                                    alt="Barbara Cartland">
+                                </figure>
+                                <div class="comment-details">
+                                    <p class="comment-title">
+                                        Barbara Cartland
+                                    </p>
+
+                                    <time class="comment-date" datetime="2022-04-15">12 hours ago</time>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="first-blog-section-newsletter" style="padding: 0.5rem;">
+                <p class="first-blog-section-newsletter-title">
+                    Comment
+                </p>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your name" required class="form-input" autocomplete="off">
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <div class="form-group">
+                    <textarea type="text" name="comment" placeholder="Your Comment" required class="form-input"
+                        autocomplete="off"></textarea>
+                    <i class="fas fa-comment-alt"></i>
+                </div>
+                <div class="first-blog-section-newsletter-submit">
+                    <button type="submit">Comment</button>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- detail first section ends -->
+
+    <!-- detail advertise section starts -->
+    <section class="detail-advertise-section container-xl">
+
+        <div class="detail-advertise-first-container">
+            <div class="stock-container">
+                <h1>Stock Exchange</h1>
+                <div class="stock-box">
+                    <h2>MYU</h2>
+                    <div class="stock-detail">
+                        <h3 class="stock-numbers">                <i class="fas fa-bitcoin-sign"></i>765</h3>
+                    </div>
+                    <div class="stock-detail">
+                        <h3 class="stock-numbers">                <i class="fas fa-bitcoin-sign"></i>865</h3>
+                    </div>
+                    <div class="stock-detail">
+                        <h3 class="stock-numbers">                <i class="fas fa-bitcoin-sign"></i>423</h3>
+                    </div>
+                    <div class="stock-detail">
+                        <h3>54 Trillion Bitcoin</h3>
+                        <div class="stock-icon">
+                            <i class="fas fa-bitcoin-sign"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="stock-box">
+                    <h2>Tel</h2>
+                    <div class="stock-detail">
+                        <h3 class="stock-numbers">                <i class="fas fa-dollar-sign"></i>943</h3>
+                    </div>
+                    <div class="stock-detail">
+                        <h3 class="stock-numbers">                <i class="fas fa-dollar-sign"></i>241</h3>
+                    </div>
+                    <div class="stock-detail">
+                        <h3 class="stock-numbers">                <i class="fas fa-bitcoin-sign"></i>645</h3>
+                    </div>
+                    <div class="stock-detail">
+                        <h3>87 Billion Dollars</h3>
+                        <div class="stock-icon">
+                            <i class="fas fa-dollar-sign"></i>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="stock-box">
+                    <h2>SPX</h2>
+                    <div class="stock-detail">
+                        <h3 class="stock-numbers">                <i class="fas fa-naira-sign"></i>121</h3>
+                    </div>
+                    <div class="stock-detail">
+                        <h3 class="stock-numbers">                <i class="fas fa-naira-sign"></i>053</h3>
+                    </div>
+                    <div class="stock-detail">
+                        <h3 class="stock-numbers">                <i class="fas fa-naira-sign"></i>096</h3>
+                    </div>
+                    <div class="stock-detail">
+                        <h3>108 Billion Naira</h3>
+                        <div class="stock-icon">
+                            <i class="fas fa-naira-sign"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="stock-box">
+                    <h2>JMG</h2>
+                    <div class="stock-detail">
+                        <h3 class="stock-numbers">                <i class="fas fa-euro -sign"></i>1965</h3>
+                    </div>
+                    <div class="stock-detail">
+                        <h3 class="stock-numbers">                <i class="fas fa-euro -sign"></i>536</h3>
+                    </div>
+                    <div class="stock-detail">
+                        <h3 class="stock-numbers">                <i class="fas fa-euro -sign"></i>2865</h3>
+                    </div>
+                    <div class="stock-detail">
+                        <h3>492 Billion Euro</h3>
+                        <div class="stock-icon">
+                            <i class="fas fa-euro -sign"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- detail advertise section ends -->
+
+    <!-- related blog starts  -->
+    <section class="related-blog-section container-xl">
+
+        <div class="related-blog-container">
+
+            <!-- related box -->
+            <div class="related-blog-box">
+                <a href="#" class="related-a">
+                    <div class="related-blog-box-details">
+                        <div class="related-blog-box-details-first">
+                            <h4>Mortal Kombat has received an ACH Award</h4>
+                            <ul>
+                                <div class="related-blog-box-category">
+                                    <li><span>Games</span></li>
+                                    <li><span>19 minutes ago</span></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="related-blog-image" style="background-image: url(assets/images/derockroman.jpg);"></div>
+                </a>
+            </div>
+
+            <!-- related box -->
+            <div class="related-blog-box">
+                <a href="#" class="related-a">
+                    <div class="related-blog-box-details visible">
+                        <div class="related-blog-box-details-first">
+                            <h4>CEO of SpaceX has approved the use of afterlife space ship</h4>
+                            <ul>
+                                <div class="related-blog-box-category">
+                                    <li><span>Rocket Science</span></li>
+                                    <li><span>12 hours ago</span></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="related-blog-image" style="background-image: url(assets/images/elon.jpg);"></div>
+                </a>
+            </div>
+
+            <!-- related box -->
+            <div class="related-blog-box">
+                <a href="#" class="related-a">
+                    <div class="related-blog-box-details">
+                        <div class="related-blog-box-details-first">
+                            <h4>Wrestlemania taking place at O2 arena in London </h4>
+                            <ul>
+                                <div class="related-blog-box-category">
+                                    <li><span>Sports</span></li>
+                                    <li><span>38 minutes ago</span></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="related-blog-image" style="background-image: url(assets/images/wrestling.jpg);"></div>
+                </a>
+            </div>
+
+            <!-- related box -->
+            <div class="related-blog-box">
+                <a href="#" class="related-a">
+                    <div class="related-blog-box-details visible">
+                        <div class="related-blog-box-details-first">
+                            <h4>Celebration of New York City Independence Day</h4>
+                            <ul>
+                                <div class="related-blog-box-category">
+                                    <li><span>Economy</span></li>
+                                    <li><span>39 hours ago</span></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="related-blog-image" style="background-image: url(assets/images/new-york.jpg);"></div>
+                </a>
+            </div>
+
+            <!-- related box -->
+            <div class="related-blog-box">
+                <a href="#" class="related-a">
+                    <div class="related-blog-box-details visible">
+                        <div class="related-blog-box-details-first">
+                            <h4>Rise of fuel pump price in Nigeria</h4>
+                            <ul>
+                                <div class="related-blog-box-category">
+                                    <li><span>Economy</span></li>
+                                    <li><span>10 minutes ago</span></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="related-blog-image" style="background-image: url(assets/images/scarcity.jpg);"></div>
+                </a>
+            </div>
+
+            <!-- related box -->
+            <div class="related-blog-box">
+                <a href="#" class="related-a">
+                    <div class="related-blog-box-details visible">
+                        <div class="related-blog-box-details-first">
+                            <h4>Meta has just approved the end to end encryption of data</h4>
+                            <ul>
+                                <div class="related-blog-box-category">
+                                    <li><span>Technology</span></li>
+                                    <li><span>2 days ago</span></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="related-blog-image" style="background-image: url(assets/images/facebook.jpg);"></div>
+                </a>
+            </div>
+            <!-- related box -->
+            <div class="related-blog-box">
+                <a href="#" class="related-a">
+                    <div class="related-blog-box-details">
+                        <div class="related-blog-box-details-first">
+                            <h4>Mortal Kombat has received an ACH Award</h4>
+                            <ul>
+                                <div class="related-blog-box-category">
+                                    <li><span>Games</span></li>
+                                    <li><span>19 minutes ago</span></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="related-blog-image" style="background-image: url(assets/images/derockroman.jpg);"></div>
+                </a>
+            </div>
+            <!-- related box -->
+            <div class="related-blog-box">
+                <a href="#" class="related-a">
+                    <div class="related-blog-box-details">
+                        <div class="related-blog-box-details-first">
+                            <h4>Wrestlemania taking place at O2 arena in London </h4>
+                            <ul>
+                                <div class="related-blog-box-category">
+                                    <li><span>Sports</span></li>
+                                    <li><span>38 minutes ago</span></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="related-blog-image" style="background-image: url(assets/images/wrestling.jpg);"></div>
+                </a>
+            </div>
+
+        </div>
+        <div class="related-contents-container">
+            <div class="related-contents-container-first">
+                <div class="related-contents-container-first-box active">
+                    <a href="#">
+                        Lastest Update
+                    </a>
+                </div>
+                <div class="related-contents-container-first-box">
+                    <a href="#">
+                        Our Vision
+                    </a>
+                </div>
+                <div class="related-contents-container-first-box">
+                    <a href="#">
+                        You Blog
+                    </a>
+                </div>
+                <div class="related-contents-container-first-box">
+                    <a href="#">
+                        Top Read
+                    </a>
+                </div>
+            </div>
+            <div class="related-contents-container-second">
+                <h2>Tips</h2>
+                <h4>you can you write the full modified version of the following devices and also make the max-width of the following devices </h4>
+                <button type="submit">Get Started</button>
+            </div>
+            <div class="related-contents-container-third">
+                <div class="related-contents-container-third-box">
+                    <img src="assets/images/barbie.jpg" alt="">
+                    <div class="related-contents-container-third-box-details">
+                        <a href="#">Entertainment</a>
+                    </div>
+                </div>
+                <div class="related-contents-container-third-box">
+                    <img src="assets/images/facebook.jpg" alt="">
+                    <div class="related-contents-container-third-box-details">
+                        <a href="#">Technology</a>
+                    </div>
+                </div>
+                <div class="related-contents-container-third-box">
+                    <img src="assets/images/meetings.jpg" alt="">
+                    <div class="related-contents-container-third-box-details">
+                        <a href="#">Forex Trading</a>
+                    </div>
+                </div>
+                <div class="related-contents-container-third-box">
+                    <img src="assets/images/scarcity.jpg" alt="">
+                    <div class="related-contents-container-third-box-details">
+                        <a href="#">Economy</a>
+                    </div>
+                </div>
+                <div class="related-contents-container-third-box">
+                    <img src="assets/images/city.jpg" alt="">
+                    <div class="related-contents-container-third-box-details">
+                        <a href="#">Lifestyle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- related blog ends -->
+
+    <!--
+          footer starts
+          -->
+    <footer class="site-footer section-padding">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h6 class="site-footer-title mb-3">Resources</h6>
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Home</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">What we do</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">FAQs</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                    <h6 class="site-footer-title mb-3">Information</h6>
+
+                    <p class="text-white d-flex mb-1">
+                        <a href="tel:152-63558-5255" class="site-footer-link">
+                            123-409-34713
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <a href="mailto:CurrentBlog.com" class="site-footer-link">
+                            CurrentBlog.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0">
+                    <p class="copyright-text mt-lg-5 mt-4">
+                        Copyright © 2023 CurrentBlog | All rights reserved.
+                        <br><br>Designed By: <a rel="nofollow" href="#" target="_blank" style="color:#fff;">Henry Kc</a>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!--
+          footer ends
+          -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/navbar.js"></script>
+</body>
+</html>
